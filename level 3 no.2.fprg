@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="X1 Carbon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-23 09:07:02 PM"/>
+        <attribute name="created" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTIzOzA4OjQ2OjIxIFBNOzMxMDU="/>
+        <attribute name="edited" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTIzOzA5OjA3OjAyIFBNOzE7MzIxMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nilaitengah, a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="nilaitengah" expression="0"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b">
+                <then>
+                    <if expression="b &gt; c">
+                        <then>
+                            <assign variable="nilaitengah" expression="b"/>
+                        </then>
+                        <else>
+                            <if expression="a &gt; c">
+                                <then>
+                                    <assign variable="nilaitengah" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="nilaitengah" expression="a"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="a &gt; c">
+                        <then>
+                            <assign variable="nilaitengah" expression="a"/>
+                        </then>
+                        <else>
+                            <if expression="b &gt; c">
+                                <then>
+                                    <assign variable="nilaitengah" expression="c"/>
+                                </then>
+                                <else>
+                                    <assign variable="nilaitengah" expression="b"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="nilaitengah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

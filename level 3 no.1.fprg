@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="X1 Carbon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 08:50:29 AM"/>
+        <attribute name="created" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTI0OzA4OjM4OjA0IEFNOzMwOTM="/>
+        <attribute name="edited" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTI0OzA4OjUwOjI5IEFNOzE7MzIwMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="data" type="Integer" array="True" size="3"/>
+            <declare name="i, j, k, swap" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="&quot;Masukkan bilangan&quot;" newline="True"/>
+                <input variable="data[i]"/>
+            </for>
+            <output expression="&quot;data awal : &quot;&amp;data[0]&amp;&quot;,&quot;&amp;data[1]&amp;&quot;,&quot;&amp;data[2]" newline="False"/>
+            <for variable="j" start="0" end="1" direction="inc" step="1">
+                <for variable="k" start="j + 1" end="2" direction="inc" step="1">
+                    <if expression="data[j] &gt; data[k]">
+                        <then>
+                            <assign variable="swap" expression="data[j]"/>
+                            <assign variable="data[j]" expression="data[k]"/>
+                            <assign variable="data[k]" expression="swap"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <output expression="&quot; urutan data dari yang terkecil : &quot;&amp;data[0]&amp;&quot;,&quot;&amp;data[1]&amp;&quot;,&quot;&amp;data[2]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

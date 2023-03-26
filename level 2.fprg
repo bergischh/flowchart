@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="X1 Carbon"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-24 10:37:17 AM"/>
+        <attribute name="created" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTI0OzA4OjUwOjM3IEFNOzMwOTM="/>
+        <attribute name="edited" value="WDEgQ2FyYm9uO0RFU0tUT1AtOEZNSEYzUDsyMDIzLTAzLTI0OzEwOjM3OjE3IEFNOzI7MzE5OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="bilangan" type="Integer" array="True" size="100"/>
+            <declare name="angka" type="Integer" array="False" size=""/>
+            <declare name="totalAngka" type="Integer" array="False" size=""/>
+            <declare name="angkaMax" type="Integer" array="False" size=""/>
+            <assign variable="angkaMax" expression="0"/>
+            <for variable="totalAngka" start="0" end="99" direction="inc" step="1">
+                <output expression="&quot;masukkan angka&quot;" newline="True"/>
+                <input variable="angka"/>
+                <assign variable="bilangan[totalAngka]" expression="angka"/>
+                <if expression="angka &gt; angkaMax">
+                    <then>
+                        <assign variable="angkaMax" expression="angka"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="angkaMax" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
